@@ -4,10 +4,15 @@ move_mouse_step = 10  # pixels per press
 [action.key_bindings]
 left_click = "Enter"
 right_click = "Shift+Enter"
-middle_click = "Cmd+Enter"
+middle_click = "Ctrl+Enter"
 mouse_down = "Shift+I"
 mouse_up = "Shift+U"
 move_mouse_up = "Up"
 move_mouse_down = "Down"
 move_mouse_left = "Left"
 move_mouse_right = "Right"
+
+# Chrome: add tab groups
+[[hints.app_configs]]
+bundle_id = "com.google.Chrome"
+additional_clickable_roles = ["AXTabGroup"]
