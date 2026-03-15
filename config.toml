@@ -16,3 +16,7 @@ move_mouse_right = "Right"
 [[hints.app_configs]]
 bundle_id = "com.google.Chrome"
 additional_clickable_roles = ["AXTabGroup"]
+
+[grid]
+sublayer_keys = "wersdfxcv"
+auto_exit_actions = ["left_click"]
