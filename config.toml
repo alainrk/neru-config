@@ -1,6 +1,15 @@
 [action]
 move_mouse_step = 10  # pixels per press
 
+[hotkeys]
+"Cmd+Shift+S" = "__disabled__"
+"Cmd+Shift+K" = "scroll"
+"Cmd+Shift+G" = "__disabled__"
+"Cmd+Shift+J" = "grid"
+"Cmd+Shift+Space" = "hints"
+"Cmd+Shift+C" = "__disabled__"
+"Cmd+Shift+;" = "recursive_grid"
+
 [action.key_bindings]
 left_click = "Enter"
 right_click = "Shift+Enter"
@@ -35,5 +44,7 @@ bundle_id = "com.google.Chrome"
 additional_clickable_roles = ["AXTabGroup"]
 
 [grid]
-sublayer_keys = "wersdfxcv"
+# characters = "abcdefghijklmnpqrstuvwxyz"    # Primary grid labels
+characters = "fjkdhageibclmnpqrstuvwxyz"    # Primary grid labels
+sublayer_keys = "wersdfxcv" # Subgrid labels (fallback to characters)
 auto_exit_actions = ["left_click"]
